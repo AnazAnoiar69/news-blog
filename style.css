@@ -1,0 +1,33 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  cursor: pointer;
+}
+
+body {
+}
+
+@media (min-width: 1024px) {
+  .gl {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px .5fr .5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header"
+      "img img posts"
+      "title article posts"
+  }
+  
+  .header { grid-area: header; }
+  
+  .img { grid-area: img; }
+  
+  .title { grid-area: title; }
+  
+  .article { grid-area: article; }
+  
+  .posts { grid-area: posts; }
+}
